@@ -1,0 +1,21 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="PDC2016" revision="latest">
+    	<description>
+    		Version 6.9.18
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+    	<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+        <dependency conf="lib->default" org="prom-libs" name="pdc2016logs" rev="20171118" transitive="false" />
+    </dependencies>
+</ivy-module>

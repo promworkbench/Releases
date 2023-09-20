@@ -1,0 +1,26 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="ProjectedRecallAndPrecision" revision="latest">
+    	<description>
+    		Version 6.11.213
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Murata" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="InductiveVisualMiner" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="TransitionSystems" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="PNAnalysis" rev="latest" changing="true" transitive="true" />
+    	
+    	<dependency conf="lib->default" org="org.apache.commons" name="commons-collections4" rev="4.1" />
+    </dependencies>
+</ivy-module>

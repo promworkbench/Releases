@@ -1,0 +1,27 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="StreamILPMiner" revision="latest">
+        <description>
+            Version 6.9.26
+        </description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+        <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="EventStream" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="HybridILPMiner" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="LogAbstractions" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="LPEngine" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Stream" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="StreamAbstractRepresentation" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

@@ -1,0 +1,28 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="XESStandard" revision="latest">
+    	<description>
+    		Version 6.10.126
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+    	<!-- For writing UTC dates, the package depends on the joda-time library, which is contained in ApacheUtils. -->
+    	<dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+    	<!-- dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" / -->
+    	<!-- Third party libraries. These may span multiple lines. -->
+    	<!-- Please uncomment the second line in the resolve target in your build.xml file
+    	     if you have any third party libraries. -->
+ 		<!-- Third party library downloaded from maven repository. -->
+    	<dependency conf="lib->default" org="com.sun.xml.bind" name="jaxb-impl" rev="2.1.17" />
+    	<!-- Third party library downloaded from ProM library. -->
+    	<!-- dependency conf="lib->default" org="prom-libs" name="opencsv" rev="2.4-patched" transitive="false" /--> 
+    </dependencies>
+</ivy-module>

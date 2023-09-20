@@ -1,0 +1,16 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="SapAutomation" revision="latest">
+        <description>
+            Version 6.12.1
+        </description>
+    </info>
+    <dependencies>
+        <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" transitive="true"/>
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true"/>
+        <dependency org="prom" name="LogAbstractions" rev="latest" changing="true" transitive="true"/>
+        <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true"/>
+        <dependency org="org.apache.logging.log4j" name="log4j-api" rev="2.7"/>
+        <dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.7"/>
+        <dependency org="org.apache.logging.log4j" name="log4j-slf4j-impl" rev="2.7"/>
+    </dependencies>
+</ivy-module>

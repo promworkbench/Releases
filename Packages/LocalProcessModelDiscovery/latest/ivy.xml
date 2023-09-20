@@ -1,0 +1,21 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="LocalProcessModelDiscovery" revision="latest">
+    	<description>
+    		Version 6.9.141
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+        <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="AcceptingPetriNetClassicalReductor" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="EvolutionaryTreeMiner" rev="latest" changing="true" transitive="true" />  
+		<dependency org="prom" name="GraphVisualizers" rev="latest" changing="true" transitive="true" />  
+   		<dependency org="prom" name="MarkovClustering" rev="latest" changing="true" transitive="true" />
+       	<dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+              	
+       	<dependency conf="lib->default" org="de.mukis" name="de.mukis.jama" rev="1.1.2"/>
+    </dependencies>
+</ivy-module>

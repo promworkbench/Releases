@@ -1,0 +1,43 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="StochasticPetriNets" revision="latest">
+    	<description>
+    		Version 6.12.5
+    	</description>
+    </info>
+     <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+		<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="TransitionSystems" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+		<!--<dependency org="prom" name="LpSolve" rev="latest" changing="true" transitive="true" />-->
+		<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />
+    	<!--<dependency org="prom" name="EvolutionaryTreeMiner" rev="latest" changing="true" transitive="true" />-->
+    	<dependency org="prom" name="ModelRepair" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />	
+    	<dependency org="prom" name="PTConversions" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="ILPMiner" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PNetAlignmentAnalysis" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Weka" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+
+		<dependency conf="lib->default" org="org.hamcrest" name="hamcrest-all" rev="1.3"/>
+		<dependency conf="lib->default" org="prom-libs" name="FastDTW" rev="unknown"/>
+		<dependency conf="lib->default" org="prom-libs" name="IntervalTree" rev="unknown"/>
+		<dependency conf="lib->default" org="prom-libs" name="javassist" rev="unknown"/>
+		<dependency conf="lib->default" org="prom-libs" name="JRI" rev="unknown"/>
+		<dependency conf="lib->default" org="prom-libs" name="JRIEngine" rev="unknown"/>
+		<dependency conf="lib->default" org="prom-libs" name="REngine" rev="unknown"/>
+		<dependency conf="lib->default" org="prom-libs" name="json-simple" rev="1.1.1"/>
+		<dependency conf="lib->default" org="prom-libs" name="simple-xml" rev="2.7"/>
+		<dependency conf="lib->default" org="prom-libs" name="SparseBitSet" rev="1.0"/>
+      </dependencies>
+</ivy-module>

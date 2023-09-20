@@ -1,0 +1,20 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="BPSim" revision="latest">
+        <description>
+            Version 6.9.69
+        </description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BPMN" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BPMNConversions" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+       <dependency conf="lib->default" org="net.sf.biweekly" name="biweekly" rev="0.3.1" transitive="false"/>
+    </dependencies>
+</ivy-module>

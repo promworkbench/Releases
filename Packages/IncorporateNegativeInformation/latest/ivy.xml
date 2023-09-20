@@ -1,0 +1,35 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="IncorporateNegativeInformation" revision="latest">
+    	<description>
+    		Version 6.10.7
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<!-- <dependency org="prom" name="ProM-Models" rev="latest" changing="true" transitive="true" /> -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	
+    	<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="InductiveVisualMiner" rev="latest" changing="true" transitive="false" />
+	<dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="false" /> 
+	<dependency org="prom" name="InductiveMinerDeprecated" rev="latest" changing="true" transitive="true" /> 
+     
+     	<dependency org="prom" name="TransitionSystems" rev="latest" changing="true" transitive="true" />
+     	<dependency org="prom" name="InteractiveLocalizedPlaceAnalysis" rev="latest" changing="true" transitive="true" />
+     	<dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+     	<!-- 
+     	     
+     	<dependency org="prom" name="Alignment" rev="latest" changing="true" transitive="true" />
+     	  <dependency org="prom" name="ModelRepair" rev="latest" changing="true" transitive="true" />
+<dependency org="prom" name="KPIProcessEnhancementWorkflow" rev="latest" changing="true" transitive="true" />
+
+     	!--> 
+    </dependencies>
+</ivy-module>

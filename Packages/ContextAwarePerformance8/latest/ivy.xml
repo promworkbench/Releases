@@ -1,0 +1,20 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="ContextAwarePerformance8" revision="latest">
+    	<description>
+    		Version 6.8.5
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	
+    	<!-- ProM framework -->
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />    	
+       
+       <dependency org="prom" name="ContextAwarePerformance" rev="latest" changing="true" transitive="true" />
+       <dependency conf="lib->default" org="eu.hansolo" name="tilesfx" rev="1.4.0" />       
+             
+    </dependencies>
+</ivy-module>

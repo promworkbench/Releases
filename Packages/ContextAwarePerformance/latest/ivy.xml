@@ -1,0 +1,75 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="ContextAwarePerformance" revision="latest">
+    	<description>
+    		Version 6.9.95
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	
+    	<!-- ProM framework -->
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	
+    	<!-- Event logs -->
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       
+       <!-- Petri nets -->
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       
+       <!-- Conformance checking through replaying logs on Petri nets -->
+       <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LpSolve" rev="latest" changing="true" transitive="true" />
+       
+       <!-- Statistical libraries -->
+       <dependency conf="lib->default" org="gov.sandia.foundry" name="gov-sandia-cognition-common-core" rev="3.4.3"/>    
+       <dependency conf="lib->default" org="gov.sandia.foundry" name="gov-sandia-cognition-learning-core" rev="3.4.3"/>
+       <dependency conf="lib->default" org="net.sourceforge.jdistlib" name="jdistlib" rev="0.4.5" />
+       <dependency conf="lib->default" org="prom-libs" name="jsc" rev="unknown" />
+       
+       <!-- NLG libraries -->
+       <dependency conf="lib->default" org="uk.ac.abdn" name="SimpleNLG" rev="4.4.8" />
+       <dependency conf="lib->default" org="gov.nih.nlm.nls.lvg" name="lvgdist" rev="2017.0" />
+       <dependency conf="lib->default" org="prom-libs" name="lexAccess2011dist" rev="20170304" />
+       
+       <!-- GUI libraries-->
+	   <dependency conf="lib->default" org="org.jfree" name="jfreesvg" rev="3.1"/>
+       <dependency conf="lib->default" org="org.swinglabs.swingx" name="swingx-all" rev="1.6.5-1"/>
+       
+       <!-- Java objects and collections-->
+       <dependency conf="lib->default" org="org.eclipse.collections" name="eclipse-collections-api" rev="7.1.0" />
+       <dependency conf="lib->default" org="org.eclipse.collections" name="eclipse-collections" rev="7.1.0" />
+       		
+		<!-- JavaFX TilesFX library -->
+       <dependency conf="lib->default" org="eu.hansolo" name="tilesfx" rev="1.6.0" />   
+       <!--  JavaFX icons from different libraries, see http://jiconfont.github.io -->    
+       <dependency conf="lib->default" org="com.github.jiconfont" name="jiconfont-javafx" rev="1.0.0" />      
+       <dependency conf="lib->default" org="com.github.jiconfont" name="jiconfont-font_awesome" rev="4.7.0.0" />       
+       
+       <!-- Old stuff kept for reference -->
+		<!--       
+       <dependency org="com.guigarage" name="flatter" rev="0.7" />
+       <dependency org="org.aerofx" name="aerofx" rev="0.1" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetAlignmentAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+       <dependency org="org.moeaframework" name="moeaframework" rev="2.10"/>
+       <dependency org="org.renjin" name="renjin-script-engine" rev="0.8.2256"/>
+       <dependency org="org.renjin.cran" name="forecast" rev="6.2-b25"/>
+       <dependency org="org.apache.commons" name="commons-math3" rev="3.6.1" />
+       -->
+       <!-- If you need to add a dependency on a third-party library, make
+            sure you copy the library to the lib folder at the end of the build.xml file. 
+            Before you include such a dependency, please first check the following web page:
+            http://ais-hudson.win.tue.nl:8080/view/System/job/Libs/lastBuild/console
+            This page shows an overview of already existing third-party libraries, and by
+            which package they are already included. Please add a dependency to this package
+            if possible, as this will automatically include the library. This prevents us
+            from having multiple different (possibly conflicting) versions of the same library.
+       -->
+    </dependencies>
+</ivy-module>

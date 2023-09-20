@@ -1,0 +1,28 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="StreamSocialNetworks" revision="latest">
+    	<description>
+    		Version 6.9.38
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+        <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="EventStream" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Stream" rev="latest" changing="true" transitive="true" />
+        <!-- mtj matrix library -->
+         <dependency conf="lib->default" org="com.googlecode.matrix-toolkits-java" name="mtj" rev="1.0.4"/>
+         <dependency conf="lib->default" org="org.graphstream" name="gs-core" rev="1.3"/>
+         <dependency conf="lib->default" org="org.graphstream" name="gs-ui" rev="1.3"/>
+
+        <!-- for memory measurements -->
+    </dependencies>
+</ivy-module>

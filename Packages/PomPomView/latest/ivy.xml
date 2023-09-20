@@ -1,0 +1,16 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="PomPomView" revision="latest">
+    	<description>
+    		Version 6.9.57
+    	</description>
+    </info>
+    <dependencies>
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EPC" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EPCConversion" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Murata" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

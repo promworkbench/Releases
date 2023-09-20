@@ -1,0 +1,42 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="GPLv2Utils" revision="latest">
+    	<description>
+    		Version 6.9.73
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+        <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Saxon" rev="latest" changing="true" transitive="true" />
+        <dependency conf="lib->default" org="prom-libs" name="DistLib" rev="unknown" transitive="false" />
+        <dependency conf="lib->default" org="prom-libs" name="jfxrt" rev="20161125" transitive="false" />
+	    <dependency conf="lib->default" org="mysql" name="mysql-connector-java" rev="6.0.6" transitive="false" />
+        <!--dependency conf="lib->default" org="org.python" name="jython-standalone" rev="2.7.0" transitive="false" moved to BasicUtils/-->
+        <!--dependency conf="lib->default" org="org.mozilla" name="rhino" rev="1.7.7" transitive="false" moved Saxon/-->
+        <!--dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-anim" rev="1.9.1" transitive="false" moved ApacheUtils />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-awt-util" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-bridge" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-codec" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-css" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-dom" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-ext" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-extension" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-gui-util" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-gvt" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-parser" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-rasterizer" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-script" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-svg-dom" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-svggen" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-swing" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-transcoder" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-util" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="batik-xml" rev="1.9.1" transitive="false" />
+        <dependency conf="lib->default" org="org.apache.xmlgraphics" name="fop" rev="2.2" transitive="false" /-->
+    </dependencies>
+</ivy-module>

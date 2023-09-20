@@ -1,0 +1,30 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="EvolutionaryTreeMiner" revision="latest">
+        <description>
+            Version 6.12.2
+        </description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PTMerge" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LpSolve" rev="latest" changing="true" transitive="true" />
+       <!--<dependency org="prom" name="" rev="latest" changing="true" transitive="true" />-->
+       <dependency org="sshtools" name="j2ssh-common" rev="0.2.9" transitive="false" />
+       <dependency org="sshtools" name="j2ssh-core" rev="0.2.9" transitive="false" />
+       <dependency org="xerces" name="xercesImpl" rev="2.11.0" transitive="false" />
+       <dependency org="xerces" name="xmlParserAPIs" rev="2.6.2" transitive="false" />
+       <dependency conf="lib->default" org="prom-libs" name="approxlib" rev="1.0" transitive="false" />
+       <dependency conf="lib->default" org="prom-libs" name="RTED" rev="1.0" transitive="false" />
+    </dependencies>
+</ivy-module>

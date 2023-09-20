@@ -1,0 +1,26 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="DeclareAnalyzer" revision="latest">
+    	<description>
+    		Version 6.9.92
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+       <!--dependency org="prom" name="DataAwareDeclareMiner" rev="latest" changing="true" transitive="true" /-->
+       <dependency org="prom" name="DeclareMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DeclareMinerVisualizer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DeclareVisualizer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LTL2Automaton" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+       <!-- jeval 0.9.4 uses Apache 2.0 license -->
+	   <dependency conf="lib->default" org="net.sourceforge.jeval" name="jeval" rev="0.9.4" />
+	   <!-- com.lowagie.test 2.1.7 uses EPL 1.0 license -->
+       <dependency conf="lib->default" org="org.eclipse.birt.runtime.3_7_1" name="com.lowagie.text" rev="2.1.7" />
+    </dependencies>
+</ivy-module>

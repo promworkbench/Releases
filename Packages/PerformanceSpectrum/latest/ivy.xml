@@ -1,0 +1,34 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="PerformanceSpectrum" revision="latest">
+    	<description>
+    		Version 6.10.58
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+    	
+    	<!-- Third party libraries. These may span multiple lines. -->
+    	<!-- Please uncomment the second line in the resolve target in your build.xml file
+    	     if you have any third party libraries. -->
+ 		<!-- Third party library downloaded from maven repository. -->
+    	<!-- dependency conf="lib->default" org="org.reflections" name="reflections" rev="0.9.10" /-->
+    	<!-- Third party library downloaded from ProM library. -->
+ 		<dependency conf="lib->default" org="org.ini4j" name="ini4j" rev="0.5.4"/>
+ 		<dependency conf="lib->default" org="org.scala-lang" name="scala-library" rev="2.12.8"/>
+		<dependency conf="lib->default" org="org.scala-lang.modules" name="scala-swing_2.12" rev="2.1.1"/>
+ 		<dependency conf="lib->default" org="javax.xml.bind" name="jaxb-api" rev="2.2.11"/>
+ 		<dependency conf="lib->default" org="org.processmining-in-logistics" name="perf_spec" rev="1.1.7"/>
+    </dependencies>
+</ivy-module>

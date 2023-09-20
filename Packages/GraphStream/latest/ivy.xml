@@ -1,0 +1,19 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="GraphStream" revision="latest">
+    	<description>
+    		Version 6.9.17
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+        <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+        <!--dependency org="prom" name="Scala" rev="latest" changing="true" transitive="true" /-->
+        <dependency conf="lib->default" org="org.graphstream" name="gs-core" rev="1.3" transitive="false" />
+        <dependency conf="lib->default" org="org.graphstream" name="gs-ui" rev="1.3" transitive="false" />
+        <dependency conf="lib->default" org="org.graphstream" name="pherd" rev="1.0" transitive="false" />
+        <dependency conf="lib->default" org="org.graphstream" name="mbox2" rev="1.0" transitive="false" />
+    </dependencies>
+</ivy-module>

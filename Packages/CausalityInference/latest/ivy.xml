@@ -1,0 +1,46 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="NewPackageIvy" revision="latest">
+    	<description>
+    		Version 6.13.1
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true"/>
+        <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" transitive="true"/>
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="LogAbstractions" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="ETConformance" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Woflan" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Alignment" rev="latest" changing="true" transitive="true" />
+    	<dependency conf="lib->default" org="org.eclipse.collections" name="eclipse-collections" rev="9.2.0" />
+    	<dependency conf="lib->default" org="com.espertech" name="esper" rev="5.3.0" />
+    	<dependency conf="lib->default" org="org.apache.commons" name="commons-jexl3" rev="3.0" />
+    	<dependency conf="lib->default" org="org.codehaus.groovy" name="groovy-all" rev="2.5.3" />
+    	
+ 
+<!--    <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" /> -->
+ 		<dependency org="com.googlecode.efficient-java-matrix-library" name="ejml" rev="0.23"/>
+ 		<dependency org="de.jollyday" name="jollyday" rev="0.5.4"/>
+<!--    <dependency org="prom" name="DeclareChecker" rev="latest" changing="true" transitive="true" />-->
+<!--    <dependency org="prom" name="DeclareMinerVisualizer" rev="latest" changing="true" transitive="true" />-->
+        <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="CSVImporter" rev="latest" changing="true" transitive="true" />   
+        <dependency org="prom" name="DataDiscovery" rev="latest" changing="true" transitive="true" />   	   	
+        <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />   	
+        <dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" /> 
+        <dependency org="org.controlsfx" name="controlsfx" rev="8.40.11"/>  		
+  		
+        <dependency org="com.github.vlsi.mxgraph" name="jgraphx" rev="4.2.2" />
+        <dependency org="net.sf.jung" name="jung-algorithms" rev="2.0.1"/>
+        
+        <dependency org="net.sourceforge.jdistlib" name="jdistlib" rev="0.4.5"/>
+    </dependencies>
+</ivy-module>

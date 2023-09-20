@@ -1,0 +1,25 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="DataAwareCNetMiner" revision="latest">
+    	<description>
+    		Version 6.9.193
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>
+    <dependencies defaultconf="default">
+	   <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="CNet" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="CausalActivityGraphCreator" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="DataAwareReplayer" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="DataDiscovery" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="BPMN" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="BPMNConversions" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />              
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />       
+       <!--dependency org="prom" name="Weka" rev="latest" changing="true" transitive="true" /-->
+       <dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataAwareCNetMinerHCG" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

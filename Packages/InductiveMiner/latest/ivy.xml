@@ -1,0 +1,25 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="InductiveMiner" revision="latest">
+    	<description>
+    		Version 6.13.9
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<dependency org="prom" name="InductiveMinerDeprecated" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />	
+    	<dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />	
+    	<dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Sat4j" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Murata" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="JAXB" rev="latest" changing="true" transitive="true" />
+        <dependency conf="lib->default" org="com.fifesoft" name="rsyntaxtextarea" rev="2.5.8" />
+    </dependencies>
+</ivy-module>

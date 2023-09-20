@@ -1,0 +1,18 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="BPMNVisualizer" revision="latest">
+    	<description>
+    		Version 6.9.47
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+        <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="BPMN" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+	   	<dependency conf="lib->default" org="org.jsoup" name="jsoup" rev="1.7.3" />
+     </dependencies>
+</ivy-module>

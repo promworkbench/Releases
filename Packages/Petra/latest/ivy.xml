@@ -1,0 +1,18 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="Petra" revision="latest">
+    	<description>
+    		Version 6.9.127
+    	</description>
+    </info>
+    <dependencies>
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CPNet" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EMF" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="GPLv2Utils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LPEngine" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

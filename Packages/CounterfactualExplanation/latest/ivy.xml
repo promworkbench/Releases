@@ -1,0 +1,47 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="CounterfactualExplanation" revision="latest">
+    	<description>
+    		Version 6.11.10
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true"/>
+        <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" transitive="true"/>
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="LogAbstractions" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PetriNetReplayAnalysis" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PNetAlignmentAnalysis" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="ETConformance" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Woflan" rev="latest" changing="true" transitive="true" />
+    	<dependency conf="lib->default" org="org.eclipse.collections" name="eclipse-collections" rev="9.2.0" />
+    	<dependency conf="lib->default" org="com.espertech" name="esper" rev="5.3.0" />
+    	<dependency conf="lib->default" org="org.apache.commons" name="commons-jexl3" rev="3.0" />
+    	<dependency conf="lib->default" org="org.codehaus.groovy" name="groovy-all" rev="2.5.3" />
+ 
+        <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="DataPetriNets" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="DataAwareReplayer" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="LpSolve" rev="latest" changing="true" transitive="true" />
+<!--    <dependency org="prom" name="DeclareChecker" rev="latest" changing="true" transitive="true" />-->
+<!--    <dependency org="prom" name="DeclareMinerVisualizer" rev="latest" changing="true" transitive="true" />-->
+        <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="CSVImporter" rev="latest" changing="true" transitive="true" />   
+        <dependency org="prom" name="DataDiscovery" rev="latest" changing="true" transitive="true" />   	   	
+        <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />   	
+        <dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />  
+        <!-- https://mvnrepository.com/artifact/org.mariuszgromada.math/MathParser.org-mXparser -->
+		<dependency org="org.mariuszgromada.math" name="MathParser.org-mXparser" rev="4.0.0"/> 
+		<dependency org="nz.ac.waikato.cms.weka" name="weka-stable" rev="3.8.3"/>
+		
+    </dependencies>
+</ivy-module>

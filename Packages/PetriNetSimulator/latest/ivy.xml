@@ -1,0 +1,23 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="PetriNetSimulator" revision="latest">
+    	<description>
+    		Version 6.9.42
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Woflan" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ChangePatterns" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

@@ -1,0 +1,31 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="ChordDiagram" revision="latest">
+    	<description>
+    		Version 6.9.19
+    	</description>
+    </info>
+    <dependencies>
+       <!-- Please use a single line for a dependency. If you use multiple liens
+            for a single dependency, in the back, things will go wrong. So please do not. -->
+       <!-- The following dependecny is required for the framework. Do not remove! -->
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <!-- Uncomment the next line if you are working with logs. -->
+       <!--dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" /-->
+       <!-- Uncomment the next line if you are working with Petri nets. -->
+       <!--dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" /-->
+       <!-- Uncomment the next line if you need to use often-used libraires contained in the BasicUtils package. -->
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <!-- Uncomment the next line if you need to use often-used GUI widgets. -->
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+       <!-- If you need to add a dependency on a third-party library, make
+            sure you copy the library to the lib folder at the end of the build.xml file. 
+            Before you include such a dependency, please first check the following web page:
+            http://ais-hudson.win.tue.nl:8080/view/System/job/Libs/lastBuild/console
+            This page shows an overview of already existing third-party libraries, and by
+            which package they are already included. Please add a dependency to this package
+            if possible, as this will automatically include the library. This prevents us
+            from having multiple different (possibly conflicting) versions of the same library.
+       -->
+        <dependency org="prom" name="SocialNetwork" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

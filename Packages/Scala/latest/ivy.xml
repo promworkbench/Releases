@@ -1,0 +1,15 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="Scala" revision="latest">
+    	<description>
+    		Version 6.9.15
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency conf="lib->default" org="org.scala-lang" name="scala-library" rev="2.12.8" transitive="false" />
+    </dependencies>
+</ivy-module>

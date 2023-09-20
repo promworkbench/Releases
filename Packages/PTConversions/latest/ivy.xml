@@ -1,0 +1,17 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="PTConversions" revision="latest">
+    	<description>
+    		Version 6.9.35
+    	</description>
+    </info>
+    <dependencies>
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="YAWL" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="EPC" rev="latest" changing="true" transitive="true" />
+	   <dependency org="prom" name="BPMN" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

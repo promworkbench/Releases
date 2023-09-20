@@ -1,0 +1,23 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="StagedProcessFlows" revision="latest">
+    	<description>
+    		Version 6.9.24
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+        <dependency conf="lib->default" org="org.apache.derby" name="derby" rev="10.13.1.1" />
+        <dependency conf="lib->default" org="org.jfree" name="swtgraphics2d" rev="1.0" />
+        <dependency conf="lib->default" org="jfree" name="jfreechart-swt" rev="1.0.17" transitive="false" />
+        <dependency conf="lib->default" org="com.lowagie" name="itext" rev="2.1.5" />
+        <dependency conf="lib->default" org="net.sourceforge.tuio" name="tuio" rev="1.4" />
+    </dependencies>
+</ivy-module>

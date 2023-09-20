@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="LpSolve" revision="latest">
+        <description>
+    		Version 5.5.3
+    	</description>
+    </info>
+</ivy-module>

@@ -1,0 +1,87 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="AProMore" revision="latest">
+    	<description>
+    		Version 6.9.61
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <!-- Dependency on ProM framework. -->
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <!-- Dependencies on ProM packages. -->
+       <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BPMN" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EPC" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Flex" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="FlexReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogDialog" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="YAWL" rev="latest" changing="true" transitive="true" />
+       <!-- Dependencies on third party libraries found on maven. -->
+	   <!--dependency org="org.lucee" name="commons-lang" rev="2.6.0" /-->
+	   <dependency conf="lib->default" org="commons-lang" name="commons-lang" rev="2.6" />
+	   <dependency conf="lib->default" org="commons-codec" name="commons-codec" rev="1.9" />
+	   <dependency conf="lib->default" org="dom4j" name="dom4j" rev="1.6.1" />
+	   <dependency conf="lib->default" org="org.hibernate" name="hibernate" rev="3.0.1" />
+	   <dependency conf="lib->default" org="org.apache.httpcomponents" name="httpclient" rev="4.3.3" />
+	   <dependency conf="lib->default" org="org.apache.httpcomponents" name="httpcore" rev="4.3.2" />
+	   <dependency conf="lib->default" org="org.glassfish.main.javaee-api" name="javax.jms" rev="3.1.2.2" />
+	   <dependency conf="lib->default" org="org.glassfish.main.connectors" name="javax.resource" rev="3.1.2.2" />
+	   <dependency conf="lib->default" org="org.glassfish" name="javax.servlet" rev="3.0" />
+	   <dependency conf="lib->default" org="org.jvnet.jaxb2_commons" name="jaxb2-basics-runtime" rev="0.6.0" />
+	   <dependency conf="lib->default" org="org.slf4j" name="jcl-over-slf4j" rev="1.7.3" />
+	   <dependency conf="lib->default" org="org.jsoup" name="jsoup" rev="1.7.3" />
+	   <dependency conf="lib->default" org="ch.qos.logback" name="logback-classic" rev="1.1.2" />
+	   <dependency conf="lib->default" org="ch.qos.logback" name="logback-core" rev="1.1.2" />
+	   <dependency conf="lib->default" org="org.apache.directory.studio" name="org.slf4j.api" rev="1.7.2" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-orm" rev="3.1.4.RELEASE" transitive="false"/>
+	   <dependency conf="lib->default" org="org.springframework.security" name="spring-security-core" rev="3.1.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework.security" name="spring-security-web" rev="3.1.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="com.github.lookfirst" name="sardine" rev="5.0.1" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-aop" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-aspects" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-beans" rev="4.0.4.RELEASE" transitive="false" />
+	   <!-- dependency org="org.springframework" name="spring-build-src" rev="4.0.4.RELEASE" transitive="false" /-->
+	   <dependency conf="lib->default" org="org.springframework" name="spring-context" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-context-support" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-core" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-expression" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-instrument" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-instrument-tomcat" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-jdbc" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-jms" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-messaging" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-orm" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-oxm" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-remoting" rev="2.0.8" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework.security" name="spring-security-config" rev="3.1.2.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework.security" name="spring-security-openid" rev="3.1.0.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-remoting" rev=".3.2.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-test" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-tx" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-web" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-webmvc" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-webmvc-portlet" rev="4.0.4.RELEASE" transitive="false" />
+	   <dependency conf="lib->default" org="org.springframework" name="spring-websocket" rev="4.0.4.RELEASE" transitive="false" />
+       <dependency conf="lib->default" org="org.springframework.ws" name="spring-ws-core" rev="2.1.2.RELEASE" transitive="false" />
+       <!-- Dependencies on third party libraries not found on maven. Copied to our prom-libs repository. -->
+       <dependency conf="lib->default" org="prom-libs" name="canoniser-api" rev="1.1" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="filestore-client" rev="unknown" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="manager-client" rev="unknown" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="manager-security" rev="unknown" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="manager-ws-model" rev="unknown" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="plugin-api" rev="1.1" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="com.springsource.com.caucho" rev="3.2.1" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="com.springsource.javax.mail" rev="1.4.0" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="com.springsource.org.aopalliance" rev="1.0.0" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="com.springsource.org.codehaus.jackson" rev="1.0.0" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="com.springsource.org.codehaus.jackson.mapper" rev="1.4.2" changing="false" transitive="false" />       
+       <dependency conf="lib->default" org="prom-libs" name="xom" rev="1.2" changing="false" transitive="false" />       
+	   <dependency conf="lib->default" org="prom-libs" name="org.springframework.xml" rev="1.5.9.A" transitive="false" />
+    </dependencies>
+</ivy-module>

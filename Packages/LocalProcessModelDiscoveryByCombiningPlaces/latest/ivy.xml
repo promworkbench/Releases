@@ -1,0 +1,39 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="LocalProcessModelDiscoveryByCombiningPlaces" revision="latest">
+    	<description>
+    		Version 6.13.27
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true"/>
+		<dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true"/>
+		<dependency org="prom" name="EfficientSTMiner" rev="latest" changing="true" transitive="true"/>
+		<dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true"/>
+		<dependency org="prom" name="HeuristicsMiner" rev="latest" changing="true" transitive="true"/>
+		<dependency org="prom" name="AcceptingPetriNetRedundantPlacesReductor" rev="latest" changing="true"	transitive="true"/>
+		<dependency org="prom" name="AcceptingPetriNetClassicalReductor" rev="latest" changing="true" transitive="true"/>
+		<!-- Third party libraries. These may span multiple lines. -->
+    	<!-- Please uncomment the second line in the resolve target in your build.xml file
+    	     if you have any third party libraries. -->
+ 		<!-- Third party library downloaded from maven repository. -->
+		<dependency org="org.powermock" name="powermock-module-junit4" rev="2.0.4"/>
+		<dependency org="org.powermock" name="powermock-api-mockito2" rev="2.0.4"/>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency org="com.google.code.gson" name="gson" rev="2.8.9"/>
+<!--		<dependency org="com.github.beamline" name="simple-pnml" rev="0.0.2"/>-->
+    	<!-- dependency conf="lib->default" org="org.reflections" name="reflections" rev="0.9.10" /-->
+    	<!-- Third party library downloaded from ProM library. -->
+    	<!-- dependency conf="lib->default" org="prom-libs" name="opencsv" rev="2.4-patched" transitive="false" /--> 
+    </dependencies>
+</ivy-module>

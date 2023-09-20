@@ -1,0 +1,28 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="BPR4GDPR" revision="latest">
+    	<description>
+    		Version 6.10.29
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+		<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+		
+		<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+		
+		<dependency org="prom" name="DataPetriNetsLGPL" rev="latest" changing="true" transitive="true" />	
+			
+		<dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />
+		
+		<dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="LpSolve" rev="latest" changing="true" transitive="true" />
+		
+		
+		
+		<dependency org="prom" name="InductiveVisualMiner" rev="latest" changing="true" transitive="true" />
+		
+    </dependencies>
+</ivy-module>

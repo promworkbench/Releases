@@ -1,0 +1,159 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="EstablishedPackages" revision="latest"/>
+    <dependencies>
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AcceptingPetriNetClassicalReductor" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AcceptingPetriNetDecomposer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AcceptingPetriNetMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AcceptingPetriNetReductionLayouter" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AcceptingPetriNetRedundantPlacesReductor" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ActivityClusterArray" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ActivityClusterArrayCreator" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ActivityClusterArrayExtractor" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Alignment" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AlphaMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Animation" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AProMore" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BPMN" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BPMNAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BPMNConversions" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BPMNMeasures" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BPSim" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CausalActivityGraph" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CausalActivityGraphCreator" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CausalActivityMatrix" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CausalActivityMatrixCreator" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CausalActivityMatrixMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CNet" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CNetReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CohortAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Compliance" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ConceptDrift" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="COSAImportExport" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Cosimulation" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CPNet" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Daikon" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataAwareCNetMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataAwareExplorer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataAwareReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataDiscovery" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataExpression" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataPetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DecomposedMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DecomposedReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DirectlyFollowsModelMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DivideAndConquer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EarthMoversStochasticConformanceChecking" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EMF" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EPC" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EPCConversion" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EpisodeMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ETConformance" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EvolutionaryTreeMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="FeaturePrediction" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="FilterBook" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Flex" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="FlexReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Fuzzy" rev="latest" changing="true" transitive="true" />
+        <!-- Eric Verbeek, November 9, 2018:
+        
+             The following dependency on the GPLv2Utils package is a run-time dependency only. 
+             It only guarantees that the GPLv2Utils package will be installed when the EstablishedPackages package is installed.
+             As such, the GPLv2Utils package can be considered as a System Library to the EstablishedPackages package.
+             Hence, the EstablishedPackages package is not required to use the GPL license of the GPLv2Utils package. 
+             At least, this is how I understand it.
+             
+        -->
+       <dependency org="prom" name="GPLv2Utils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="GraphStream" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="GraphVisualizers" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="GuideTreeMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="HeuristicsCNetMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="HeuristicsMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="HybridILPMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ILPMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="InductiveMinerDeprecated" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="InductiveVisualMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="InteractiveVisualization" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="KitFox" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LocalizedLogs" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogAbstractions" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogAlignment" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogDecomposer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogDialog" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogEnhancement" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogMerge" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogProjection" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogSkeleton" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogTimeFilter" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LPEngine" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ModelRepair" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Monte" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="MultiPerspectiveProcessExplorer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Murata" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="OperationalSupport" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="OSService" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PartialOrderReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PatternAbstractions" rev="latest" changing="true" transitive="true" />
+       <!-- Eric Verbeek, November 12, 2018:
+       
+            The following package contains the part of PNetAlignmentANalysis that depended on Weka, and was hence GPL.
+            By moving this part out of PNetAlignmentANalysis, PNetAlignmentANalysis can remain L-GPL.
+       -->
+       <dependency org="prom" name="PatternMining" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PDC2016" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PDC2017" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PDC2019" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Performance" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Petra" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Petrify" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNetReplayAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetAlignmentAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PomPomView" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PPM" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PrimeMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ProcessLogGenerator" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ProjectedRecallAndPrecision" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PTConversions" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PTMerge" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Sat4j" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Saxon" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Scala" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="SelectivePRepair" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="SignatureDiscovery" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="SimpleLogOperations" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="SLog" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="SocialNetwork" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Statechart" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="StatisticalTests" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="StochasticPetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="TraceAlignment" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="TraceAlignmentWithGuideTree" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="TraceMatching" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="TransitionSystems" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="TSPetrinet" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Uma" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="UncertaintyMarker" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Visualisation3D" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Weka" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Woflan" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="XESAlignmentExtension" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="XESStandard" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="XESStandardConnector" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="YAWL" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

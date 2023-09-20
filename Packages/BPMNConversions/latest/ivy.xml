@@ -1,0 +1,29 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="BPMNConversions" revision="latest">
+    	<description>
+    		Version 6.9.117
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <!-- ProM dependencies -->	
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BPMN" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataExpression" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataPetriNetsLGPL" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Flex" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+       <!--dependency org="prom" name="Weka" rev="latest" changing="true" transitive="true" /-->
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+       <!-- Third party libraries. -->
+       <dependency conf="lib->default" org="org.mockito" name="mockito-all" rev="1.9.5" />
+    </dependencies>
+</ivy-module>

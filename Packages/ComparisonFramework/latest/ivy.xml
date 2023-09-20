@@ -1,0 +1,27 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="ComparisonFramework" revision="latest">
+		<description>
+			Version 6.7.66
+		</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>
+    <dependencies defaultconf="default">
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />    	
+    	<dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />    	
+    	<dependency org="prom" name="EvolutionaryTreeMiner" rev="latest" changing="true" transitive="true" />    	
+    	<dependency org="prom" name="InteractiveVisualization" rev="latest" changing="true" transitive="true" />    	
+    	<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="LogDialog" rev="latest" changing="true" transitive="true" />    	
+    	<dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="SocialNetwork" rev="latest" changing="true" transitive="true" />    	
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />  
+    	<dependency conf="lib->default" org="org.pojava" name="pojava" rev="2.9.0" />  	
+    	<dependency conf="lib->default" org="prom-libs" name="kd" rev="unknown" />  	
+     </dependencies>
+</ivy-module>

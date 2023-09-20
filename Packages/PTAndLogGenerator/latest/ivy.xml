@@ -1,0 +1,30 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="PTAndLogGenerator" revision="latest">
+    	<description>
+    		Version 6.9.185
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AlphaMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataAwareReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LpSolve" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataDiscovery" rev="latest" changing="true" transitive="true" />
+       <!--dependency conf="lib->default" org="org.python" name="jython-standalone" rev="2.7.0"/ in BasicUtils now -->
+       <dependency conf="lib->default" org="prom-libs" name="noUniqueTraces" rev="20180312" transitive="false" />
+       <dependency conf="lib->default" org="prom-libs" name="PyTree" rev="20180312" transitive="false" />
+       <dependency conf="lib->default" org="prom-libs" name="Simpy" rev="20180312" transitive="false" />
+       <dependency conf="lib->default" org="prom-libs" name="TreeSimulator" rev="20180312" transitive="false" />      
+    </dependencies>
+</ivy-module>

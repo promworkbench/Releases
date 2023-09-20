@@ -1,0 +1,20 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="IntroductionToProcessMining2IMI35" revision="latest">
+    	<description>
+    		Version 6.5.5
+    	</description>
+    </info>
+    <dependencies>
+       <dependency org="prom" name="DataAwareReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DataPetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="HeuristicsMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetAlignmentAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="SocialNetwork" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="TransitionSystems" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="TSPetrinet" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

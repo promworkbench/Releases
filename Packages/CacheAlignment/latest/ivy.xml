@@ -1,0 +1,27 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="CacheAlignment" revision="latest">
+    	<description>
+    		Version 6.13.5
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true"/>
+       <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" transitive="true"/>
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogAbstractions" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+      <dependency org="prom" name="DataPetriNets" rev="latest" changing="true" transitive="true" />
+      <dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+    	<dependency conf="lib->default" org="org.eclipse.collections" name="eclipse-collections" rev="9.2.0" />
+    	<dependency conf="lib->default" org="org.apache.commons" name="commons-jexl3" rev="3.0" />
+    	<dependency conf="lib->default" org="org.codehaus.groovy" name="groovy-all" rev="2.5.3" />
+    	<!-- Next item is added to replace lib/json-20211205.jar -->
+    	<dependency conf="lib->default" org="org.json" name="json" rev="20230227"/>    	
+    </dependencies>
+</ivy-module>

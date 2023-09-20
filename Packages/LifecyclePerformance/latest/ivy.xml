@@ -1,0 +1,31 @@
+<ivy-module version="2.0">
+	<info organisation="prom" module="LifecyclePerformance"
+		revision="latest">
+		<description>
+			Version 6.13.7
+		</description>
+	</info>
+	<configurations>
+		<conf name="default" extends="lib" />
+		<conf name="lib" />
+	</configurations>
+	<dependencies defaultconf="default">
+	
+		<!-- ProM dependencies. -->
+		<!-- Please put every ProM dependency on a single line. -->
+		<!-- ProM framework. -->
+		<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+		<!-- ProM packages. -->
+		<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="EventStream" rev="latest" changing="true" transitive="true" />
+		<dependency org="prom" name="TransitionSystems" rev="latest" changing="true" transitive="true" />
+
+		<!-- For the performance metric editor -->
+		<dependency org="com.fifesoft" name="rsyntaxtextarea" rev="2.6.1" />
+		<!-- For evaluating performance metric expressions -->
+		<dependency org="net.objecthunter" name="exp4j" rev="0.4.8" />
+
+	</dependencies>
+</ivy-module>

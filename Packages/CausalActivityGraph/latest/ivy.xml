@@ -1,0 +1,13 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="CausalActivityGraph" revision="latest">
+    	<description>
+    		Version 6.9.50
+    	</description>
+    </info>
+    <dependencies>
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CNet" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

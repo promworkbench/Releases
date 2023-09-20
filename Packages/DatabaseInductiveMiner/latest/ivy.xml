@@ -1,0 +1,35 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="DatabaseInductiveMiner" revision="latest">
+    	<description>
+    		Version 6.10.42
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+        <!-- Eric Verbeek, November 9, 2018:
+        
+             The following dependency on the GPLv2Utils package is a run-time dependency only. 
+             It only guarantees that the GPLv2Utils package will be installed when the DatabaseInductiveMiner package is installed.
+             As such, the GPLv2Utils package can be considered as a System Library to the DatabaseInductiveMiner package.
+             Hence, the DatabaseInductiveMiner package is not required to use the GPL license of the GPLv2Utils package. 
+             At least, this is how I understand it.
+             
+        -->
+        <dependency org="prom" name="GPLv2Utils" rev="latest" changing="true" transitive="true" />
+        <dependency conf="lib->default" org="org.quartz-scheduler" name="quartz" rev="2.2.3"/>
+	    <dependency conf="lib->default" org="org.jdatepicker" name="jdatepicker" rev="1.3.4" />
+		<dependency conf="lib->default" org="com.h2database" name="h2" rev="1.4.196" />
+    </dependencies>
+</ivy-module>

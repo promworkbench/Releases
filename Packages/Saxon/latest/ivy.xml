@@ -1,0 +1,16 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="Saxon" revision="latest">
+    	<description>
+    		Version 6.9.69
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+     	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+        <dependency conf="lib->default" org="prom-libs" name="saxon" rev="9he" />
+        <dependency conf="lib->default" org="org.mozilla" name="rhino" rev="1.7.7" transitive="false" />
+   </dependencies>
+</ivy-module>

@@ -1,0 +1,8 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="EpisodeMiner" revision="latest"/>
+    <dependencies>
+        <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+     </dependencies>
+</ivy-module>

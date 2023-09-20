@@ -1,0 +1,19 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="GraphViz" revision="latest">
+    	<description>
+    		Version 6.13.5
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+        <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="KitFox" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+        
+        <dependency conf="lib->default" org="com.itextpdf" name="itextpdf" rev="5.5.11" />
+     </dependencies>
+</ivy-module>

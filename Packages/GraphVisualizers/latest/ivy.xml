@@ -1,0 +1,18 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="GraphVisualizers" revision="latest">
+    	<description>
+    		Version 6.9.51
+    	</description>
+    </info>
+    <dependencies>
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ActivityClusterArray" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CausalActivityGraph" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Fuzzy" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="TransitionSystems" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

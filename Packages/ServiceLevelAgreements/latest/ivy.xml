@@ -1,0 +1,34 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="ServiceLevelAgreements" revision="latest">
+    	<description>
+    		Version 6.9.31
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogProjection" rev="latest" changing="true" transitive="true" />
+    	
+    	<!-- Third party libraries. -->
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="org.eclipse.collections" name="eclipse-collections-api" rev="7.1.0" />
+       <dependency org="org.eclipse.collections" name="eclipse-collections" rev="7.1.0" />
+       <dependency org="org.scala-lang.modules" name="scala-parser-combinators_2.12" rev="1.0.6" />
+       <dependency org="org.dom4j" name="dom4j" rev="2.0.1"/>
+       <dependency org="commons-validator" name="commons-validator" rev="1.6"/>      
+       
+       <!-- Unused -->
+       <!-- JPL is a Java interface to Prolog -->
+       <!-- <dependency org="jpl" name="jpl" rev="7.4.0" /> -->
+       <!-- dependency conf="lib->default" org="org.reflections" name="reflections" rev="0.9.10" /-->
+       <!-- dependency conf="lib->default" org="prom-libs" name="opencsv" rev="2.4-patched" transitive="false" /-->        
+       <!-- <dependency org="com.vividsolutions" name="jts-core" rev="1.14.0" /> -->
+       
+       </dependencies>
+</ivy-module>

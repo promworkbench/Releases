@@ -1,0 +1,40 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="Statechart" revision="latest">
+        <description>
+            Version 6.9.76
+        </description>
+    </info>
+    <configurations>
+        <conf name="default" extends="lib" />
+        <conf name="lib" />
+    </configurations>  
+    <dependencies defaultconf="default">
+        <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    
+        <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+        
+        <dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+        
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Properties" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+        
+        <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+        
+        <dependency org="prom" name="DataAwareReplayer" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="ProjectedRecallAndPrecision" rev="latest" changing="true" transitive="true" />
+        
+        <dependency conf="lib->default" org="org.swinglabs" name="swingx" rev="1.6.1"/>
+        <dependency conf="lib->default" org="com.jidesoft" name="jide-oss" rev="3.6.18"/>
+        <!-- HV: The next dependency is taken ca rof by ApacheUtils -->
+        <!--dependency conf="lib->default" org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.8.1"/-->
+        <dependency conf="lib->default" org="org.abego.treelayout" name="org.abego.treelayout.core" rev="1.0.3" />
+        
+        <!-- Bug fix in Guava: https://stackoverflow.com/questions/19030954/cant-find-nullable-inside-javax-annotation -->
+        <dependency conf="lib->default" org="com.google.code.findbugs" name="jsr305" rev="3.0.2" />
+        
+     </dependencies>
+</ivy-module>

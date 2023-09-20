@@ -1,0 +1,29 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="ProM-Contexts" revision="latest">
+    	<description>
+    		Version 6.13.4
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    
+       <!-- ProM licensxe -->
+       <dependency org="prom" name="ProM-Framework" rev="latest" changing="true" transitive="true" />
+
+	   <!-- Apache 2.0 license -->
+       <dependency conf="lib->default" org="prom-libs" name="guava" rev="16.0.1" changing="false" transitive="true" />
+	          
+       <!-- EPL license -->
+       <dependency conf="lib->default" org="junit" name="junit" rev="4.12" changing="false" transitive="false" />
+       
+       <!-- No license -->
+       <dependency conf="lib->default" org="prom-libs" name="bsh" rev="2.0b4" changing="false" transitive="false" />
+       <dependency conf="lib->default" org="prom-libs" name="Spex" rev="1.1" changing="false" transitive="false" />
+       <dependency conf="lib->default" org="prom-libs" name="Uitopia" rev="0.6-20190913" changing="false" transitive="false" />
+       <dependency conf="lib->default" org="prom-libs" name="UITopiaResources" rev="0.6-20190913" changing="false" transitive="false" />
+       
+    </dependencies>
+</ivy-module>

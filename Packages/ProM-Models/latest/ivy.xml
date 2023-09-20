@@ -1,0 +1,13 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="ProM-Models" revision="latest">
+    	<description>
+    		Version 6.12.1
+    	</description>
+    </info>
+    <dependencies>
+    
+       <!-- ProM license -->
+       <dependency org="prom" name="ProM-Framework" rev="latest" changing="true" transitive="true" />
+       
+    </dependencies>
+</ivy-module>

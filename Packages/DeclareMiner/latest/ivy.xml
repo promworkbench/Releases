@@ -1,0 +1,22 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="DeclareMiner" revision="latest">
+    	<description>
+    		Version 6.9.104
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DeclareMinerVisualizer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DeclareVisualizer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LTL2Automaton" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LTLChecker" rev="latest" changing="true" transitive="true" />
+       <!--dependency org="prom" name="Weka" rev="latest" changing="true" transitive="true" /-->
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

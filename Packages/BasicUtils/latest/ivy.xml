@@ -1,0 +1,45 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="BasicUtils" revision="latest">
+    	<description>
+    		Version 6.12.1
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+        <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+        <dependency conf="lib->default" org="prom-libs" name="javacsv" rev="2.1" transitive="false" />
+        <dependency conf="lib->default" org="prom-libs" name="javailp" rev="1.2a" transitive="false" />
+        <dependency conf="lib->default" org="prom-libs" name="jbpt" rev="0.2.429.1" transitive="false" />
+        <dependency conf="lib->default" org="prom-libs" name="jgrapht" rev="jdk1.6" transitive="false" />
+        <dependency conf="lib->default" org="prom-libs" name="jmathplot" rev="unknown" transitive="false" />
+        <dependency conf="lib->default" org="net.sf.trove4j" name="trove4j" rev="3.0.3" transitive="false" />
+        <dependency conf="lib->default" org="de.sciss" name="prefuse-core" rev="1.0.0" transitive="false" />
+        <dependency conf="lib->default" org="prom-libs" name="ujmp-complete" rev="0.2.5" transitive="false" />
+        <!-- Added from ProM-Plugins. To keep L-GPL out of ProM-Plugins -->
+        <dependency conf="lib->default" org="org.jfree" name="jcommon" rev="1.0.24" changing="false" transitive="false" />
+        <dependency conf="lib->default" org="org.jfree" name="jfreechart" rev="1.0.19" changing="false" transitive="false" />
+        <!-- Also added from ProM-Plugins. To keep BSD out of ProM-Plugins -->
+        <dependency conf="lib->default" org="net.sf.jung" name="jung-algorithms" rev="2.0" changing="false" transitive="false" />
+        <!--dependency conf="lib->default" org="net.sf.jung" name="jung-algorithms" rev="2.1.1" changing="false" transitive="false" /-->
+        <dependency conf="lib->default" org="net.sf.jung" name="jung-api" rev="2.0" changing="false" transitive="false" />
+        <!--dependency conf="lib->default" org="net.sf.jung" name="jung-api" rev="2.1.1" changing="false" transitive="false" /-->
+        <dependency conf="lib->default" org="net.sf.jung" name="jung-graph-impl" rev="2.0" changing="false" transitive="false" />
+        <!--dependency conf="lib->default" org="net.sf.jung" name="jung-graph-impl" rev="2.1.1" changing="false" transitive="false" /-->
+        <dependency conf="lib->default" org="net.sf.jung" name="jung-io" rev="2.0" changing="false" transitive="false" />
+        <!--dependency conf="lib->default" org="net.sf.jung" name="jung-io" rev="2.1.1" changing="false" transitive="false" /-->
+        <dependency conf="lib->default" org="net.sf.jung" name="jung-visualization" rev="2.0" changing="false" transitive="false" />
+        <!--dependency conf="lib->default" org="net.sf.jung" name="jung-visualization" rev="2.1.1" changing="false" transitive="false" /-->
+        <!-- Also added from ProM-Plugins, to reduce the numbe rof librarie sin ProM-Plugins -->
+        <dependency conf="lib->default" org="colt" name="colt" rev="1.2.0" changing="false" transitive="false" />
+        <dependency conf="lib->default" org="prom-libs" name="FilterableSortableTablePanel" rev="latest" changing="false" transitive="false" />
+        <dependency conf="lib->default" org="prom-libs" name="flanagan" rev="0.9alpha" changing="false" transitive="false" />
+        <dependency conf="lib->default" org="prom-libs" name="jas-plotter" rev="2.2" changing="false" transitive="false" />
+        <dependency conf="lib->default" org="net.java.linoleum" name="jlfgr" rev="1_0" changing="false" transitive="false" />
+        <dependency conf="lib->default" org="prom-libs" name="openide-lookup" rev="1.9-patched-1.0" changing="false" transitive="false" />
+        <dependency conf="lib->default" org="com.thoughtworks.xstream" name="xstream" rev="1.4.9" changing="false" transitive="false" />
+        <dependency conf="lib->default" org="org.python" name="jython-standalone" rev="2.7.0" transitive="false" />
+   </dependencies>
+</ivy-module>

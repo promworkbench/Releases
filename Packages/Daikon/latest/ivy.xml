@@ -1,0 +1,16 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="Daikon" revision="latest">
+    	<description>
+    		Version 6.9.31
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+        <dependency conf="lib->default" org="prom-libs" name="daikon" rev="unknown"/>
+    </dependencies>
+</ivy-module>

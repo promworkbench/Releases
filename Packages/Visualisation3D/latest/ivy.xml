@@ -1,0 +1,69 @@
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+    <info organisation="prom" module="Visualisation3D" revision="latest">
+    	<description>
+    		Version 6.10.100
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    	<!-- Third party libraries. These may span multiple lines. -->
+    	<!-- Please uncomment the second line in the resolve target in your build.xml file
+    	     if you have any third party libraries. -->
+ 		<!-- Third party library downloaded from maven repository. -->
+    	<!-- dependency conf="lib->default" org="org.reflections" name="reflections" rev="0.9.10" /-->
+    	<!-- Third party library downloaded from ProM library. -->
+    	<!-- dependency conf="lib->default" org="prom-libs" name="opencsv" rev="2.4-patched" transitive="false" /--> 
+    	<dependency org="org.jogamp.gluegen" name="gluegen" rev="2.3.2" transitive="true"/>
+        <dependency org="org.jogamp.jogl" name="jogl" rev="2.3.2" transitive="true"/>      
+        <dependency org="org.jogamp.jogl" name="nativewindow" rev="2.3.2" />
+        
+        <dependency conf="lib->default" org="org.jogamp.gluegen" name="gluegen-rt" rev="2.3.2">
+            <artifact name="gluegen-rt"/>
+            <artifact name="gluegen-rt" e:classifier="sources"/>
+            <artifact name="gluegen-rt" e:classifier="javadoc"/>
+            <artifact name="gluegen-rt" e:classifier="natives-android-armv6"/>
+            <artifact name="gluegen-rt" e:classifier="natives-linux-amd64"/>
+            <artifact name="gluegen-rt" e:classifier="natives-linux-armv6"/>
+            <artifact name="gluegen-rt" e:classifier="natives-linux-armv6hf"/>
+            <artifact name="gluegen-rt" e:classifier="natives-linux-i586"/>
+            <artifact name="gluegen-rt" e:classifier="natives-macosx-universal"/>
+            <artifact name="gluegen-rt" e:classifier="natives-solaris-amd64"/>
+            <artifact name="gluegen-rt" e:classifier="natives-solaris-i586"/>
+            <artifact name="gluegen-rt" e:classifier="natives-windows-amd64"/>
+            <artifact name="gluegen-rt" e:classifier="natives-windows-i586"/>
+        </dependency>
+        
+        <dependency org="org.jogamp.jogl" name="jogl-all-main" rev="2.3.2">
+            <artifact name="jogl-all-main"/>
+            <artifact name="jogl-all-main" e:classifier="sources"/>
+            <artifact name="jogl-all-main" e:classifier="javadoc"/>
+        </dependency>
+         
+        <dependency conf="lib->default" org="org.jogamp.jogl" name="jogl-all" rev="2.3.2">
+            <artifact name="jogl-all"/>
+            <!--artifact name="jogl-all" e:classifier="sources"/-->
+            <artifact name="jogl-all" e:classifier="javadoc"/>
+            <artifact name="jogl-all" e:classifier="natives-android-armv6"/>
+            <artifact name="jogl-all" e:classifier="natives-linux-amd64"/>
+            <artifact name="jogl-all" e:classifier="natives-linux-armv6"/>
+            <artifact name="jogl-all" e:classifier="natives-linux-armv6hf"/>
+            <artifact name="jogl-all" e:classifier="natives-linux-i586"/>
+            <artifact name="jogl-all" e:classifier="natives-macosx-universal"/>
+            <artifact name="jogl-all" e:classifier="natives-solaris-amd64"/>
+            <artifact name="jogl-all" e:classifier="natives-solaris-i586"/>
+            <artifact name="jogl-all" e:classifier="natives-windows-amd64"/>
+            <artifact name="jogl-all" e:classifier="natives-windows-i586"/>
+        </dependency>
+    	
+    </dependencies>
+</ivy-module>

@@ -1,0 +1,25 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="ModelRepair" revision="latest">
+    	<description>
+    		Version 6.11.69
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies>
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LPEngine" rev="latest" changing="true"/>
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ILPMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Uma" rev="latest" changing="true" transitive="true" />
+       <!-- Third party libraries. -->
+       <dependency conf="lib->default" org="junit" name="junit" rev="4.12"/>
+    </dependencies>
+</ivy-module>

@@ -1,0 +1,18 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="Alignment" revision="latest">
+    	<description>
+    		Version 6.10.122
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="LpSolve" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+	   <dependency conf="lib->default" org="prom-libs" name="gurobi" rev="6.5"/>
+	</dependencies>
+</ivy-module>

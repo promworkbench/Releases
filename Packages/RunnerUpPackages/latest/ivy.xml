@@ -1,0 +1,24 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="RunnerUpPackages" revision="latest">
+    	<description>
+    		Version 6.12.4
+    	</description>
+    </info>
+    <dependencies>
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EstablishedPackages" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="AutoAssociationPlot" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ComplianceFramework" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="CSMMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DiSCover" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Filterd" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="GeneralizedConformance" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LinearLayouts" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LocalProcessModelDiscovery" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LPMSupportedWords" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="MarkovClustering" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PerformanceSpectrumIntegration" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PTLinearVisualization" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="TraceClustering" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

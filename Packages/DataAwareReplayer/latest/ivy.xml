@@ -1,0 +1,16 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="DataAwareReplayer" revision="latest">
+		<description>
+			Version 6.9.722
+		</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>    
+    <dependencies defaultconf="default">
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="DataAwareReplayerLGPL" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="DataPetriNets" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

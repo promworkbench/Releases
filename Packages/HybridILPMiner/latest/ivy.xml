@@ -1,0 +1,25 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="HybridILPMiner" revision="latest">
+        <description>
+            Version 6.10.154
+        </description>
+    </info>
+    <dependencies>
+        <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    
+        <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" />
+        <dependency org="prom" name="BasicUtils" rev="latest" changing="true" />
+        <dependency org="prom" name="CausalActivityGraph" rev="latest" changing="true" />
+        <dependency org="prom" name="CausalActivityGraphCreator" rev="latest" changing="true" />
+        <dependency org="prom" name="CausalActivityMatrix" rev="latest" changing="true" />
+        <dependency org="prom" name="CausalActivityMatrixMiner" rev="latest" changing="true" />
+        <dependency org="prom" name="CNet" rev="latest" />
+        <dependency org="prom" name="DataAwareCNetMinerHCG" rev="latest" changing="true" />
+        <dependency org="prom" name="LogAbstractions" rev="latest" changing="true" />
+        <dependency org="prom" name="Log" rev="latest" changing="true" />
+        <dependency org="prom" name="LPEngine" rev="latest" changing="true" />
+        <dependency org="prom" name="Murata" rev="latest" changing="true" />
+        <dependency org="prom" name="PetriNets" rev="latest" changing="true" />
+        <dependency org="prom" name="Widgets" rev="latest" changing="true" />
+    </dependencies>
+</ivy-module>

@@ -1,0 +1,37 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="Widgets" revision="latest">
+    	<description>
+    		Version 6.12.2
+    	</description>
+    </info>
+	<configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>      
+    <dependencies defaultconf="default">
+		<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />    
+        <dependency conf="lib->default" org="prom-libs" name="japura" rev="1.12.3" transitive="false" />
+		<dependency conf="lib->default" org="org.freehep" name="freehep-io" rev="2.2.2">
+			<exclude org="junit" module="junit" />
+		</dependency>       
+		<dependency conf="lib->default" org="org.freehep" name="freehep-graphicsio" rev="2.4">
+			<exclude org="junit" module="junit" />
+		</dependency>       
+        <dependency conf="lib->default" org="org.freehep" name="freehep-graphicsio-emf" rev="2.4">
+        	<exclude org="junit" module="junit" />
+        </dependency> 
+		<dependency conf="lib->default" org="org.freehep" name="freehep-graphicsio-java" rev="2.4">
+			<exclude org="junit" module="junit" />
+		</dependency>       
+		<dependency conf="lib->default" org="org.freehep" name="freehep-graphicsio-pdf" rev="2.4" />       
+        <dependency conf="lib->default" org="org.freehep" name="freehep-graphicsio-ps" rev="2.4" /> 
+        <dependency conf="lib->default" org="org.freehep" name="freehep-graphicsio-svg" rev="2.4" />
+		<dependency conf="lib->default" org="org.freehep" name="freehep-graphicsio-swf" rev="2.4">
+			<exclude org="junit" module="junit" />
+		</dependency>       
+		<dependency conf="lib->default" org="org.freehep" name="freehep-graphicsio-tests" rev="2.4">
+			<exclude org="junit" module="junit" />
+		</dependency>
+        <dependency conf="lib->default" org="com.toedter" name="jcalendar" rev="1.4" />
+     </dependencies>
+</ivy-module>

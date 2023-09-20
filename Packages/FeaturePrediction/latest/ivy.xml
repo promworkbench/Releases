@@ -1,0 +1,21 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="FeaturePrediction" revision="latest">
+		<description>
+			Version 6.9.125
+		</description>
+    </info>
+    <dependencies>    	
+        <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="DataPetriNets" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="DataAwareReplayer" rev="latest" changing="true" transitive="true" />
+<!--    <dependency org="prom" name="DeclareChecker" rev="latest" changing="true" transitive="true" />-->
+<!--    <dependency org="prom" name="DeclareMinerVisualizer" rev="latest" changing="true" transitive="true" />-->
+        <dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+        <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />      	
+<!--    <dependency org="prom" name="DataAwareDeclareMiner" rev="latest" changing="true" transitive="true" />-->      	
+     </dependencies>
+</ivy-module>

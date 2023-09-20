@@ -1,0 +1,28 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="ComplianceFramework" revision="latest">
+		<description>
+			Version 6.10.49
+		</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>
+    <dependencies defaultconf="default">
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />    	
+    	<dependency org="prom" name="Compliance" rev="latest" changing="true" transitive="true" />    
+    	<dependency org="prom" name="Daikon" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="DataAwareReplayer" rev="latest" changing="true" transitive="true" />	    	
+    	<dependency org="prom" name="DataPetriNets" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />    	
+    	<dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />    	
+    	<dependency org="prom" name="PNetAlignmentAnalysis" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+    	<!--dependency org="prom" name="Weka" rev="latest" changing="true" transitive="true" /-->    	
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />    	
+     </dependencies>
+</ivy-module>

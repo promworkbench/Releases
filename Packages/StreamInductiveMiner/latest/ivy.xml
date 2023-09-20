@@ -1,0 +1,27 @@
+<ivy-module version="2.0" xmlns:promns="http://promtools.org/prom6/">
+    <info organisation="prom" module="StreamInductiveMiner" revision="latest">
+        <description>
+            Version 6.9.70
+        </description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+        <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" />
+        <dependency org="prom" name="EventStream" rev="latest" changing="true" />
+        <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" />
+        <dependency org="prom" name="LogAbstractions" rev="latest" changing="true" />
+        <dependency org="prom" name="ProcessTree" rev="latest" changing="true" />
+        <dependency org="prom" name="PTConversions" rev="latest" changing="true" />
+        <dependency org="prom" name="Stream" rev="latest" changing="true" />
+        <dependency org="prom" name="StreamAbstractRepresentation" rev="latest" changing="true" />
+        <dependency org="prom" name="Widgets" rev="latest" changing="true" />
+    </dependencies>
+</ivy-module>

@@ -1,0 +1,18 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="Sat4j" revision="latest">
+    	<description>
+    		Version 6.9.7
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+    </dependencies>
+</ivy-module>

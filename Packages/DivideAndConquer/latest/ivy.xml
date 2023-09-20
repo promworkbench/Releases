@@ -1,0 +1,13 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="DivideAndConquer" revision="latest">
+    	<description>
+    		Version 6.9.91
+    	</description>
+    </info>
+    <dependencies>
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DecomposedMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="DecomposedReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogDialog" rev="latest" changing="true" transitive="true" />
+    </dependencies>
+</ivy-module>

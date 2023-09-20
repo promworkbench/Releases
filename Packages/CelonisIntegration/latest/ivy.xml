@@ -1,0 +1,47 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="CelonisIntegration" revision="latest">
+    	<description>
+    		Version 6.13.29
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="BPMN" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+     	<dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+    	<!-- Third party libraries. These may span multiple lines. -->
+    	<!-- Please uncomment the second line in the resolve target in your build.xml file
+    	     if you have any third party libraries. -->
+ 		<!-- Third party library downloaded from maven repository. -->
+    	<!-- dependency conf="lib->default" org="org.reflections" name="reflections" rev="0.9.10" /-->
+    	<!-- Third party library downloaded from ProM library. -->
+    	<!-- in Log dependency conf="lib->default" org="prom-libs" name="OpenXES" rev="20211004" transitive="false" /--> 
+    	<!-- in ApacheUtils dependency org="xpp3" name="xpp3" rev="1.1.4c" /-->
+    	<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+		<dependency conf="lib->default" org="org.springframework" name="spring-core" rev="5.3.14"/>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+		<dependency conf="lib->default" org="org.springframework" name="spring-web" rev="5.3.14"/>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency conf="lib->default" org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.13.0"/>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency conf="lib->default" org="com.fasterxml.jackson.core" name="jackson-core" rev="2.13.0"/>
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency conf="lib->default" org="org.json" name="json" rev="20211205"/>
+		<!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+		<!-- in ApacheUtils dependency conf="lib->default" org="com.opencsv" name="opencsv" rev="5.5.2"/-->
+		
+		
+		
+    	
+    </dependencies>
+</ivy-module>

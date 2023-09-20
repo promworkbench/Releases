@@ -1,0 +1,21 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="HybridModel" revision="latest">
+    	<description>
+    		Version 6.9.10
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="HeuristicsMiner" rev="latest" changing="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+       <dependency org="com.github.fracpete" name="vfsjfilechooser2" rev="0.2.7" transitive="false" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" /> 
+    </dependencies>
+</ivy-module>

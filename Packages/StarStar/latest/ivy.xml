@@ -1,0 +1,27 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="StarStar" revision="latest">
+    	<description>
+    		Version 6.9.7
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true"/>
+       <dependency org="prom" name="AcceptingPetriNet" rev="latest" changing="true" transitive="true"/>
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogAbstractions" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNetReplayAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetAlignmentAnalysis" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="XESLite" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ETConformance" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Woflan" rev="latest" changing="true" transitive="true" />
+    	<dependency conf="lib->default" org="org.eclipse.collections" name="eclipse-collections" rev="9.2.0" />
+    	<dependency conf="lib->default" org="com.espertech" name="esper" rev="5.3.0" />
+    	<dependency conf="lib->default" org="org.apache.commons" name="commons-jexl3" rev="3.0" />
+    </dependencies>
+</ivy-module>

@@ -1,0 +1,31 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="Uma" revision="latest">
+    	<description>
+    		Version 6.9.96
+    	</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+       <dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Animation" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="ILPMiner" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="InteractiveVisualization" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogAbstractions" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LogDialog" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="LpSolve" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="OSService" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="TransitionSystems" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+       <dependency conf="lib->default" org="org.antlr" name="antlr-runtime" rev="3.2" />
+       <dependency conf="lib->default" org="prom-libs" name="pnapi-java" rev="1.0.5" />      
+       <dependency conf="lib->default" org="prom-libs" name="uma" rev="1.3.2" />
+    </dependencies>
+</ivy-module>

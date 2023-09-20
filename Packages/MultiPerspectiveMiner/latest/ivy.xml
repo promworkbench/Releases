@@ -1,0 +1,53 @@
+<ivy-module version="2.0">
+    <info organisation="prom" module="MultiPerspectiveMiner" revision="latest">
+		<description>
+			Version 6.9.196
+		</description>
+    </info>
+    <configurations>
+   		<conf name="default" extends="lib" />
+   		<conf name="lib" />
+	</configurations>  
+    <dependencies defaultconf="default">
+    	<!-- ProM dependencies. -->
+    	<!-- Please put every ProM dependency on a single line. -->
+    	<!-- ProM framework. -->
+    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
+    	<!-- ProM packages. -->
+    	<dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="BPMN" rev="latest" changing="true" transitive="true" />
+    	<!--dependency org="prom" name="BPMNConversions" rev="latest" changing="true" transitive="true" /-->
+    	<dependency org="prom" name="BPMNVisualizer" rev="latest" changing="true" transitive="true" />
+    	<!--dependency org="prom" name="DataPetriNets" rev="latest" changing="true" transitive="true" /-->
+    	<dependency org="prom" name="EfficientStorage" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="InductiveMiner" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="PNAnalysis" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="PNetReplayer" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ProcessTree" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Swimlanes" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="AlphaMiner" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="EvolutionaryTreeMiner" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="HeuristicsMiner" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ILPMiner" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="ApacheUtils" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="GraphViz" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="DataDiscovery" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="DataExpression" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="LocalizedLogs" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="AcceptingPetriNetMiner" rev="latest" changing="true" transitive="true" />
+    	<dependency org="prom" name="LogAlignment" rev="latest" changing="true" transitive="true" />
+    	<!-- Third party libraries. These may span multiple lines. -->
+    	<!-- Please uncomment the second line in the resolve target in your build.xml file
+    	     if you have any third party libraries. -->
+ 		<!-- Third party library downloaded from maven repository. -->
+    	<dependency conf="lib->default" org="com.jgoodies" name="jgoodies-common" rev="1.8.1" />
+		<dependency conf="lib->default" org="com.jgoodies" name="jgoodies-forms" rev="1.9.0" />
+		<dependency conf="lib->default" org="com.jgoodies" name="jgoodies-validation" rev="2.5.1" />
+    	<!-- Third party library downloaded from ProM library. -->
+    	<!-- dependency conf="lib->default" org="prom-libs" name="opencsv" rev="2.4-patched" transitive="false" /--> 
+     </dependencies>
+</ivy-module>
