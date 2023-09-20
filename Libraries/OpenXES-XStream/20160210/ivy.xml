@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+    <info organisation="prom-libs" module="OpenXES-XStream" revision="20160210">
+    	<description>
+    		Fixed issue with jar file.
+    	</description>
+    </info>
+</ivy-module>

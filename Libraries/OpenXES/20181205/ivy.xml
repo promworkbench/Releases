@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+    <info organisation="prom-libs" module="OpenXES" revision="20181205">
+    	<description>
+    		OpenXES Version 2.26. Added Artifact Lifecycle extension. 
+    	</description>
+    </info>
+</ivy-module>

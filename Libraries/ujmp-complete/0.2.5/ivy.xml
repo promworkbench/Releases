@@ -1,0 +1,3 @@
+<ivy-module version="2.0">
+    <info organisation="prom-libs" module="ujmp-complete" revision="0.2.5"/>
+</ivy-module>

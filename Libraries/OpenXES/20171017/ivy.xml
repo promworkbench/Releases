@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+    <info organisation="prom-libs" module="OpenXES" revision="20171017">
+    	<description>
+    		Improved support for SoftwareEvent extension. Fixed issue with line numbers.
+    	</description>
+    </info>
+</ivy-module>

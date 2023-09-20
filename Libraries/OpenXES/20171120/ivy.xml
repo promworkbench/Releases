@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+    <info organisation="prom-libs" module="OpenXES" revision="20171120">
+    	<description>
+    		OpenXES Version 2.21. Contains support for SoftwareCommunication and SoftwareTelemetry extensions. 
+    	</description>
+    </info>
+</ivy-module>

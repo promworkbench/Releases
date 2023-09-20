@@ -1,0 +1,3 @@
+<ivy-module version="2.0">
+    <info organisation="prom-libs" module="guava" revision="16.0.1"/>
+</ivy-module>

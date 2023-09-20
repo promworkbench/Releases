@@ -1,0 +1,6 @@
+<ivy-module version="2.0">
+    <info organisation="prom-libs" module="Uitopia" revision="0.6-20190913"/>
+    <dependencies>
+       <dependency org="prom-libs" name="Spex" rev="1.1" changing="false" transitive="false" />
+    </dependencies>
+</ivy-module>

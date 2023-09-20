@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+    <info organisation="prom-libs" module="pdc2019logs" revision="20190113">
+    	<description>
+    		PDC 2019 log collection. Only traning logs, both CSV and XES format.
+    	</description>
+    </info>
+</ivy-module>

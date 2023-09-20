@@ -1,0 +1,1 @@
+This version (0.2.429.1) is basically the same as version 0.2.429. THe only difference is that in org/jbpt/algo/ListCombintationGenerator.java the name Böhr has been replaced by Boehr in a comment to prevent issues with unmappable UTF-8 characters.

@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+    <info organisation="prom-libs" module="pdc2017logs" revision="20171118">
+    	<description>
+    		PDC 2017 log collection. 
+    	</description>
+    </info>
+</ivy-module>

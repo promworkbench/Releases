@@ -1,0 +1,1 @@
+THis was the original 4.0.0 version of org.cpntools.accesscpn.engine.protocol, but this version did not include the class files in the root folder (only in the bin folder). In the new 4.0.0 version, this has been fixed.

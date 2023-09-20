@@ -1,0 +1,3 @@
+<ivy-module version="2.0">
+    <info organisation="prom-libs" module="OpenXES" revision="2.0"/>
+</ivy-module>
